@@ -14,7 +14,7 @@ const Productos = () => {
             {
                 productos.length > 1 
                 ?productos.map(item => (
-                    <Producto info={item}/>
+                    <Producto key={item.id} info={item}/>
                     )).slice(0,page*20)
                 : <></>
             }
