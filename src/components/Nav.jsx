@@ -1,12 +1,13 @@
 import { useGeneralViewContext } from "../context/UserContext"
+import { NavContainer, NavContent } from "../style/nav"
 
 const Nav = () => {
     const { generalViewContextValue } = useGeneralViewContext()
 
     return (
-        <div>
-            <span>{generalViewContextValue.userLogged}</span>
-        </div>
+        <NavContainer>
+            <NavContent>{generalViewContextValue.userLogged}</NavContent>
+        </NavContainer>
     )
 }
 

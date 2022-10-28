@@ -1,13 +1,15 @@
+import { Img, ProductoImg, ProductoInfo, ProductoStyle } from "../style/producto"
+
 const Producto = ({info}) => {
     return (
-        <div>
-            <div><img src={info.images[0]} alt="" /></div>
-            <div>
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
+        <ProductoStyle>
+            <ProductoImg><Img src={info.images[0]} alt="" /></ProductoImg>
+            <ProductoInfo>
+                <span>{info.title}</span>
+                <span>{info.category.name}</span>
+                <span>${info.price}</span>
+            </ProductoInfo>
+        </ProductoStyle>
     )
 }
 
