@@ -4,10 +4,11 @@ import { Link } from "react-router-dom";
 export const ProductInfoContainer = styled.div`
     padding: 1rem;
     font-family: 'Poppins', sans-serif;
-    display: flex;
-    flex-direction: column;
     gap: 2rem;
     animation: load 600ms ease;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 2rem;
     @keyframes load {
         0%{
             opacity: 0.2;
@@ -17,11 +18,10 @@ export const ProductInfoContainer = styled.div`
 `
 
 export const BtnAtras = styled(Link)`
-    margin-left: 1rem;
     background-color: royalblue;
     border-radius: 1rem;
     max-width: 10rem;
-    padding: 1rem;
+    padding: 0.8rem 1.8rem;
     color: white;
     font-weight: bold;
     text-align: center;
@@ -38,6 +38,7 @@ export const ProductoDetails = styled.div`
     padding: 1rem;
     border-radius: 1rem;
     flex-wrap: wrap;
+    margin-top: 2rem;
 `
 
 export const ProductosImgs = styled.div`
